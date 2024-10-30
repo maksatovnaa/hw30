@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: hsl(6, 90%, 68%);
+    background-image: url('bg-intro-mobile.png');
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(bg-intro-desktop.png);
+}
+.container1{
+    margin: 40px 40px 0 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container1 h1{
+    font-size: 28px;
+    color: white;
+}
+.container1 p{
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+.container2 .content1 button{
+    width: 95%;
+    height: 70px;
+    padding: 10px;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: -3px 4px 4px rgb(192, 125, 125);
+}
+.container2 .content1 button a{
+    color: white;
+    text-decoration: none;
+}
+.container2 .content1 button a span{
+    font-weight: 700;
+}
+
+.container2 .content2{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container2 form{
+    border-radius: 5px;
+    padding: 20px 10px 10px 10px;
+    background-color: white;
+    border: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    text-align: center;
+}
+.container2 form input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    width: 95%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px grey solid;
+}
+.container2 form button{
+    width: 95%;
+    padding: 10px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+}
+.container2 form button a{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+.container2 form p{
+    font-size: 10px;
+    color: grey;
+}
+.container2 form p span{
+    color: hsl(0, 100%, 74%);
+}
+
+
+
+@media screen and (min-width: 1000px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url(bg-intro-mobile.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: row;
+        gap: 0px;
+    }
+    .container1{
+        width: 90%;
+        margin-right: 0px;
+        text-align: left;
+        margin-left: 150px;
+    }
+    .container1 h1{
+        font-size: 42px;
+        width: 40%;
+    }
+    .container1 p{
+        width: 55%;
+
+    }
+
+    .container2{
+        width: 80%;
+        margin-left: -400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2 .content1{
+        width: 57%;
+        margin-left: 20px;
+    }
+    .container2 .content1 button{
+        height: 50px;
+    }
+    .container2 .content2{
+        width: 70%;
+        height: 370px;
+        width: 60%;
+    }
+    .container2 form{
+        height: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+}
